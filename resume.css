@@ -8,8 +8,8 @@
     flex: 1 0 250px;
     background-color: antiquewhite;
     color: black;
-    margin: 5px;
-    
+    margin: 1px;
+    height: 150vh;
 }
 
 .content{
@@ -22,7 +22,7 @@
     
     background-color: antiquewhite;
     color: black;
-    margin:  5px;
+    margin:  1px;
     height: 50vh;
 }
 .summary,
@@ -30,8 +30,14 @@
     flex: 1 0 250px;
     background-color: antiquewhite;
     color: black;
-    margin:  5px;
+    margin:  1px;
     height: 35vh;
+}
+form{
+    background-color: antiquewhite;
+    color: black;
+    margin:  1px;
+    height: 15vh; 
 }
 
 h1{
