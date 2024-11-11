@@ -1,56 +1,59 @@
 *{
     margin: 0 auto;
-    max-width: 720px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container{
+ 
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    
+
 }
 
 .role{
-    flex: 1 0 250px;
-    background-color: antiquewhite;
+    background-color: #D6EAF8;
     color: black;
-    margin: 1px;
-    height: 150vh;
+    padding-bottom: 10px;
 }
+.role h1{
+    text-align: center;
 
+}
 .content{
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+
 }
 
 .skills{
     
-    background-color: antiquewhite;
+    background-color: #D6EAF8;
     color: black;
-    margin:  1px;
-    height: 50vh;
-}
-.summary,
-.WE{
-    flex: 1 0 250px;
-    background-color: antiquewhite;
-    color: black;
-    margin:  1px;
-    height: 35vh;
-  
-}
-form{
-    background-color: antiquewhite;
-    color: black;
-    margin:  1px;
-    height: 15vh; 
+    width: 100%;
 }
 
-h1{
-color: blueviolet;
-align-content: center;
+.summary,.WE{
+    
+    background-color: #D6EAF8;
+    color: black;
+    width: 100%;
 }
+
+
+form{
+    background-color: #D6EAF8;
+    color: black;
+    width: 100%;
+}
+
+
 
 h2{
     color: rgb(15, 144, 62);
@@ -60,3 +63,48 @@ h2{
         color: rgb(226, 162, 43);
         align-content: center;
         }
+
+       @media (min-width: 140px) and (max-width: 480px) and (orientation: portrait){
+         .main{
+            display: flex;
+            flex-direction: column;
+         }
+         .container{
+            display: flex;
+            flex-direction: column;
+         }
+
+         @media (min-width: 140px) and (max-width: 480px) and (orientation: landscape){
+            .main{
+               display: flex;
+               flex-direction: column;
+            }
+            .container{
+               display: flex;
+               flex-direction: row;
+            }
+
+       }
+       @media (min-width: 481px) and (max-width:1290px)and (orientation: portrait){
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+       }
+
+       @media (min-width: 481px) and (max-width:1290px){
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+       }
+
+
